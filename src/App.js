@@ -12,6 +12,10 @@ function App() {
   console.log("Component rendering");
 
   useEffect(() => {
+    document.title =text
+  }, [text])
+
+  useEffect(() => {
     setTimeout(() => setCount(0), 5000)
   }, [])
 
